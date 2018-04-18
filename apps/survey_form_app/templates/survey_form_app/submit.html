@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submit - Survey Form</title>
+</head>
+<body>
+        <div class="counter">
+                <h3>Thank you for submitting this form. You have submitted this form {{ request.session.number }} times now.</h3>
+              </div>
+              <div class="results">
+                <h2>Submitted Information</h2>
+                <p><b>Name: </b> {{ request.session.name }}</p>
+                <p><b>Location: </b> {{ request.session.location }}</p>
+                <p><b>Favourite Language: </b> {{ request.session.favelang }}</p>
+                <p><b>Comment: </b> {{ request.session.comment }}</p>
+                <a href="/"><button type="button" name="Back">Back</button></a>
+        </div>
+
+
+    
+</body>
+</html>
